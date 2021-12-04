@@ -3,7 +3,6 @@
 *::after {
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
-  font-family: "Rubik", sans-serif;
 }
 
 /* Remove default margin */
@@ -33,11 +32,6 @@ a:not([class]) {
           text-decoration-skip-ink: auto;
 }
 
-body {
-  font-size: 1.125rem;
-  padding: 5.0625rem;
-}
-
 .flex {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -58,10 +52,6 @@ body {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-}
-
-.user-info-bg {
-  background-color: #5847eb;
 }
 
 .work-bg {
@@ -88,11 +78,83 @@ body {
   background-color: #f1c65b;
 }
 
-.user {
+.user,
+.user__info {
   border-radius: 15px;
   overflow: hidden;
 }
 
+body {
+  font-size: 1.125rem;
+  padding: 5.0625rem;
+  font-family: "Rubik", sans-serif;
+}
+
+main.grid-container {
+  display: grid;
+  gap: 1.5rem;
+  min-width: 20.4375rem;
+}
+
 .user {
   background: #0f1424;
+  min-height: 12.6875rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  padding-bottom: 1.5625rem;
+}
+.user__info {
+  background-color: #5847eb;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  min-height: 8.3125rem;
+}
+.user__image {
+  width: 4.375rem;
+  height: 4.375rem;
+  border: 3px solid #ffffff;
+  border-radius: 50%;
+  margin: 0 1.125rem 0 1.8125rem;
+}
+.user__name p:first-of-type {
+  font-weight: 400;
+  font-size: 0.9375rem;
+  line-height: 1.4375rem;
+  color: #bdc1ff;
+}
+.user__name p:first-of-type + p {
+  font-weight: 300;
+  font-size: 1.5rem;
+  line-height: 2rem;
+  color: #fff;
+}
+.user__cta {
+  font-size: 1.125rem;
+  line-height: 1.3125rem;
+  color: #6f76c8;
+  cursor: pointer;
+}
+.user__cta:hover {
+  color: #fff;
+}
+.user__cta:nth-child(1) {
+  margin-left: 2.125rem;
+}
+.user__cta:nth-child(2) {
+  margin-left: 3.5rem;
+}
+.user__cta:nth-child(3) {
+  margin-left: 2.625rem;
 }/*# sourceMappingURL=main.css.map */

@@ -2,7 +2,6 @@
 *::before,
 *::after {
   box-sizing: border-box;
-  font-family: 'Rubik', sans-serif;
 }
 /* Remove default margin */
 body,
@@ -25,9 +24,4 @@ img {
 /* A elements that don't have a class get default styles */
 a:not([class]) {
   text-decoration-skip-ink: auto;
-}
-
-body {
-  font-size: 1.125rem;
-  padding: 5.0625rem;
 }
