@@ -1,5 +1,8 @@
-*,
-*::before,
-*::after {
-  box-sizing: border-box;
-}
+@use 'base';
+@use 'utility';
+@use 'globalStyle';
+
+@use 'layout';
+
+@use 'userComponent';
+@use 'cardComponent';

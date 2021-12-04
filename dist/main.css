@@ -3,4 +3,96 @@
 *::after {
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
+  font-family: "Rubik", sans-serif;
+}
+
+/* Remove default margin */
+body,
+h1,
+p {
+  margin: 0;
+}
+
+/* Inherit fonts for inputs and buttons */
+input,
+button,
+textarea,
+select {
+  font: inherit;
+}
+
+/* Make images easier to work with */
+img {
+  max-width: 100%;
+  display: block;
+}
+
+/* A elements that don't have a class get default styles */
+a:not([class]) {
+  -webkit-text-decoration-skip: ink;
+          text-decoration-skip-ink: auto;
+}
+
+body {
+  font-size: 1.125rem;
+  padding: 5.0625rem;
+}
+
+.flex {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+.flex-f-d-col {
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+.flex-j-c-sb {
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+.flex-a-i-c {
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.user-info-bg {
+  background-color: #5847eb;
+}
+
+.work-bg {
+  background-color: #ff5c7c;
+}
+
+.play-bg {
+  background-color: #56c2e6;
+}
+
+.study-bg {
+  background-color: #ff5c7c;
+}
+
+.exercise-bg {
+  background-color: #4acf81;
+}
+
+.social-bg {
+  background-color: #7536d3;
+}
+
+.selfcare-bg {
+  background-color: #f1c65b;
+}
+
+.user {
+  border-radius: 15px;
+  overflow: hidden;
+}
+
+.user {
+  background: #0f1424;
 }/*# sourceMappingURL=main.css.map */

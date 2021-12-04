@@ -1,0 +1,37 @@
+@use 'color' as *;
+
+.flex {
+  display: flex;
+
+  &-f-d-col {
+    flex-direction: column;
+  }
+  &-j-c-sb {
+    justify-content: space-between;
+  }
+  &-a-i-c {
+    align-items: center;
+  }
+}
+
+.user-info-bg {
+  background-color: $blue;
+}
+.work-bg {
+  background-color: $lightred;
+}
+.play-bg {
+  background-color: $softblue;
+}
+.study-bg {
+  background-color: $lightred;
+}
+.exercise-bg {
+  background-color: $limegreen;
+}
+.social-bg {
+  background-color: $violet;
+}
+.selfcare-bg {
+  background-color: $softorange;
+}

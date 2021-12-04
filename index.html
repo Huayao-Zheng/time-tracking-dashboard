@@ -4,11 +4,84 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png" />
-
-    <link rel="stylesheet" href="dist/main.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Rubik:wght@300;400;500&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="./dist/main.css" />
     <title>Frontend Mentor | Time tracking dashboard</title>
   </head>
-  <body>
+  <body class="flex flex-f-d-col flex-a-i-c">
+    <main class="grid-container">
+      <div class="user">
+        <div class="user-info-bg">
+          <img class="user_image" src="./images/image-jeremy.png" alt="Jeremy self image" />
+          <div class="user__name">
+            <span>Report for</span>
+            Jeremy Robson
+          </div>
+        </div>
+
+        <div class="user__records">
+          <a class="cta user__records--daily">Daily</a>
+          <a class="cta user__records--weekly">Weekly</a>
+          <a class="cta user__records--monthly">Monthly</a>
+        </div>
+      </div>
+
+      <div class="card">
+        <div class="flex flex-j-c-sb">
+          <h2 class="card__title">Work</h2>
+          <img class="card__ellipsis" src="images/icon-ellipsis.svg" alt="ellipsis" />
+        </div>
+        <div class="card__hours--current">32</div>
+        <div class="card__hours--previous">36</div>
+      </div>
+
+      <div class="card">
+        <div class="flex flex-j-c-sb">
+          <h2 class="card__title">Play</h2>
+          <img class="card__ellipsis" src="images/icon-ellipsis.svg" alt="ellipsis" />
+        </div>
+        <div class="card__hours--current">10</div>
+        <div class="card__hours--previous">8</div>
+      </div>
+
+      <div class="card">
+        <div class="flex flex-j-c-sb">
+          <h2 class="card__title">Study</h2>
+          <img class="card__ellipsis" src="images/icon-ellipsis.svg" alt="ellipsis" />
+        </div>
+        <div class="card__hours--current">4</div>
+        <div class="card__hours--previous">7</div>
+      </div>
+
+      <div class="card">
+        <div class="flex flex-j-c-sb">
+          <h2 class="card__title">Exercise</h2>
+          <img class="card__ellipsis" src="images/icon-ellipsis.svg" alt="ellipsis" />
+        </div>
+        <div class="card__hours--current">4</div>
+        <div class="card__hours--previous">5</div>
+      </div>
+
+      <div class="card">
+        <div class="flex flex-j-c-sb">
+          <h2 class="card__title">Social</h2>
+          <img class="card__ellipsis" src="images/icon-ellipsis.svg" alt="ellipsis" />
+        </div>
+        <div class="card__hours--current">5</div>
+        <div class="card__hours--previous">10</div>
+      </div>
+
+      <div class="card">
+        <div class="flex flex-j-c-sb">
+          <h2 class="card__title">Self Care</h2>
+          <img class="card__ellipsis" src="images/icon-ellipsis.svg" alt="ellipsis" />
+        </div>
+        <div class="card__hours--current">2</div>
+        <div class="card__hours--previous">2</div>
+      </div>
+    </main>
     <script src="app/js/scrpt.js"></script>
   </body>
 </html>
