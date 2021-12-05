@@ -2,17 +2,12 @@
 @use 'color' as *;
 
 .user {
-  background: $verydarkBlue;
+  background: $darkblue;
   min-height: rem(203);
-  display: flex;
-  flex-direction: column;
-  justify-content: space-between;
   padding-bottom: rem(25);
 
   &__info {
     background-color: $blue;
-    display: flex;
-    align-items: center;
     min-height: rem(133);
   }
   &__image {

@@ -15,20 +15,20 @@
 }
 
 .work-bg {
-  background-color: $lightred;
+  background: $lightredWork url(../../images/icon-work.svg) no-repeat right 7% top -13%;
 }
 .play-bg {
-  background-color: $softblue;
+  background: #55c2e6 url(../../images/icon-play.svg) no-repeat right 8.5% top -6%;
 }
 .study-bg {
-  background-color: $lightred;
+  background: $lightredStudy url(../../images/icon-study.svg) no-repeat right 7% top -9%;
 }
 .exercise-bg {
-  background-color: $limegreen;
+  background: $limegreen url(../../images/icon-exercise.svg) no-repeat right 7% top -1%;
 }
 .social-bg {
-  background-color: $violet;
+  background: $violet url(../../images/icon-social.svg) no-repeat right 5% top -25%;
 }
 .selfcare-bg {
-  background-color: $softorange;
+  background: $softorange url(../../images/icon-self-care.svg) no-repeat right 5.6% top -12%;
 }

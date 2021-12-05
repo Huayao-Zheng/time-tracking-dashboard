@@ -8,6 +8,7 @@
 /* Remove default margin */
 body,
 h1,
+h2,
 p {
   margin: 0;
 }
@@ -55,33 +56,34 @@ a:not([class]) {
 }
 
 .work-bg {
-  background-color: #ff5c7c;
+  background: #ff8b64 url(../../images/icon-work.svg) no-repeat right 7% top -13%;
 }
 
 .play-bg {
-  background-color: #56c2e6;
+  background: #55c2e6 url(../../images/icon-play.svg) no-repeat right 8.5% top -6%;
 }
 
 .study-bg {
-  background-color: #ff5c7c;
+  background: #ff5e7d url(../../images/icon-study.svg) no-repeat right 7% top -9%;
 }
 
 .exercise-bg {
-  background-color: #4acf81;
+  background: #4bcf82 url(../../images/icon-exercise.svg) no-repeat right 7% top -1%;
 }
 
 .social-bg {
-  background-color: #7536d3;
+  background: #7335d2 url(../../images/icon-social.svg) no-repeat right 5% top -25%;
 }
 
 .selfcare-bg {
-  background-color: #f1c65b;
+  background: #f1c75b url(../../images/icon-self-care.svg) no-repeat right 5.6% top -12%;
 }
 
 .user,
-.user__info {
+.user__info,
+.card,
+.card__display {
   border-radius: 15px;
-  overflow: hidden;
 }
 
 body {
@@ -97,28 +99,12 @@ main.grid-container {
 }
 
 .user {
-  background: #0f1424;
+  background: #1c1f4a;
   min-height: 12.6875rem;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
   padding-bottom: 1.5625rem;
 }
 .user__info {
   background-color: #5847eb;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
   min-height: 8.3125rem;
 }
 .user__image {
@@ -157,4 +143,42 @@ main.grid-container {
 }
 .user__cta:nth-child(3) {
   margin-left: 2.625rem;
+}
+
+.card {
+  padding-top: 2.375rem;
+}
+.card__display {
+  background: #1c1f4a;
+  height: 7.625rem;
+  padding: 1.75rem 1.5rem;
+}
+.card__display__title {
+  margin-bottom: 0.4375rem;
+}
+.card__display__title h2 {
+  font-weight: 500;
+  font-size: 1.125rem;
+  line-height: 1.3125rem;
+  color: #ffffff;
+}
+.card__display__title img {
+  cursor: pointer;
+  -webkit-transition: 0.2s;
+  transition: 0.2s;
+}
+.card__display__title img:hover {
+  -webkit-transform: scale(1.1);
+          transform: scale(1.1);
+}
+.card__display__hours__current {
+  font-weight: 300;
+  font-size: 2rem;
+  line-height: 2.375rem;
+  color: #ffffff;
+}
+.card__display__hours__previous {
+  font-size: 15px;
+  line-height: 18px;
+  color: #bdc1ff;
 }/*# sourceMappingURL=main.css.map */

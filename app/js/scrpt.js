@@ -1,19 +1,36 @@
-const allCurrentHours = document.querySelectorAll('.card__hours--current');
-const allPreviousHours = document.querySelectorAll('.card__hours--previous');
+const allCurrentHours = document.querySelectorAll('.card__display__hours__current');
+const allPreviousHours = document.querySelectorAll('.card__display__hours__previous');
+const dailyBtn = document.querySelector('#daily');
+const weeklyBtn = document.querySelector('#weekly');
+const monthlyBtn = document.querySelector('#monthly');
 
-async function showCards() {
+dailyBtn.addEventListener('click', () => {
+  getHourRecords('daily');
+});
+weeklyBtn.addEventListener('click', () => {
+  getHourRecords('weekly');
+});
+monthlyBtn.addEventListener('click', () => {
+  getHourRecords('monthly');
+});
+
+async function getHourRecords(date) {
   try {
     const data = await fetch('./data.json');
-    const cardsData = await data.json();
+    const records = await data.json();
 
-    showDaily();
-    showWeekly();
-    showMonthly();
+    records.forEach(({ timeframes }, idx) => {
+      const { current, previous } = timeframes[date];
+
+      allCurrentHours[idx].innerHTML = `${current}hr${sOrNoS(current)}`;
+      allPreviousHours[idx].innerHTML = `Last Week - ${previous}hr${sOrNoS(previous)}`;
+    });
   } catch (error) {
     console.error(error);
   }
 }
 
-function showDaily() {}
-function showWeekly() {}
-function showMonthly() {}
+function sOrNoS(number) {
+  if (number > 1) return 's';
+  return '';
+}

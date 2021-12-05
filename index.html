@@ -12,8 +12,8 @@
   </head>
   <body class="flex flex-f-d-col flex-a-i-c">
     <main class="grid-container">
-      <div class="user">
-        <div class="user__info">
+      <div class="user flex flex-f-d-col flex-j-c-sb">
+        <div class="user__info flex flex-a-i-c">
           <img class="user__image" src="./images/image-jeremy.png" alt="Jeremy self image" />
           <div class="user__name">
             <p>Report for</p>
@@ -22,64 +22,88 @@
         </div>
 
         <div>
-          <a class="user__cta" id="daily-cta">Daily</a>
-          <a class="user__cta" id="weekly-cta">Weekly</a>
-          <a class="user__cta" id="monthly-cta">Monthly</a>
+          <a class="user__cta" id="daily">Daily</a>
+          <a class="user__cta" id="weekly">Weekly</a>
+          <a class="user__cta" id="monthly">Monthly</a>
         </div>
       </div>
 
-      <div class="card">
-        <div class="flex flex-j-c-sb">
-          <h2 class="card__title">Work</h2>
-          <img class="card__ellipsis" src="images/icon-ellipsis.svg" alt="ellipsis" />
+      <div class="card work-bg">
+        <div class="card__display">
+          <div class="card__display__title flex flex-j-c-sb flex-a-i-c">
+            <h2>Work</h2>
+            <img src="images/icon-ellipsis.svg" alt="ellipsis" />
+          </div>
+          <div class="card__display__hours flex flex-j-c-sb flex-a-i-c">
+            <div class="card__display__hours__current current">32hrs</div>
+            <div class="card__display__hours__previous previous">Last Week - 36hrs</div>
+          </div>
         </div>
-        <div class="card__hours--current">32</div>
-        <div class="card__hours--previous">36</div>
       </div>
 
-      <div class="card">
-        <div class="flex flex-j-c-sb">
-          <h2 class="card__title">Play</h2>
-          <img class="card__ellipsis" src="images/icon-ellipsis.svg" alt="ellipsis" />
+      <div class="card play-bg">
+        <div class="card__display">
+          <div class="card__display__title flex flex-j-c-sb flex-a-i-c">
+            <h2>Play</h2>
+            <img src="images/icon-ellipsis.svg" alt="ellipsis" />
+          </div>
+          <div class="card__display__hours flex flex-j-c-sb flex-a-i-c">
+            <div class="card__display__hours__current">10hrs</div>
+            <div class="card__display__hours__previous">Last Week - 8hrs</div>
+          </div>
         </div>
-        <div class="card__hours--current">10</div>
-        <div class="card__hours--previous">8</div>
       </div>
 
-      <div class="card">
-        <div class="flex flex-j-c-sb">
-          <h2 class="card__title">Study</h2>
-          <img class="card__ellipsis" src="images/icon-ellipsis.svg" alt="ellipsis" />
+      <div class="card study-bg">
+        <div class="card__display">
+          <div class="card__display__title flex flex-j-c-sb flex-a-i-c">
+            <h2>Study</h2>
+            <img src="images/icon-ellipsis.svg" alt="ellipsis" />
+          </div>
+          <div class="card__display__hours flex flex-j-c-sb flex-a-i-c">
+            <div class="card__display__hours__current">4hrs</div>
+            <div class="card__display__hours__previous">Last Week - 7hrs</div>
+          </div>
         </div>
-        <div class="card__hours--current">4</div>
-        <div class="card__hours--previous">7</div>
       </div>
 
-      <div class="card">
-        <div class="flex flex-j-c-sb">
-          <h2 class="card__title">Exercise</h2>
-          <img class="card__ellipsis" src="images/icon-ellipsis.svg" alt="ellipsis" />
+      <div class="card exercise-bg">
+        <div class="card__display">
+          <div class="card__display__title flex flex-j-c-sb flex-a-i-c">
+            <h2>Exercise</h2>
+            <img src="images/icon-ellipsis.svg" alt="ellipsis" />
+          </div>
+          <div class="card__display__hours flex flex-j-c-sb flex-a-i-c">
+            <div class="card__display__hours__current">4hrs</div>
+            <div class="card__display__hours__previous">Last Week - 5hrs</div>
+          </div>
         </div>
-        <div class="card__hours--current">4</div>
-        <div class="card__hours--previous">5</div>
       </div>
 
-      <div class="card">
-        <div class="flex flex-j-c-sb">
-          <h2 class="card__title">Social</h2>
-          <img class="card__ellipsis" src="images/icon-ellipsis.svg" alt="ellipsis" />
+      <div class="card social-bg">
+        <div class="card__display">
+          <div class="card__display__title flex flex-j-c-sb flex-a-i-c">
+            <h2>Social</h2>
+            <img src="images/icon-ellipsis.svg" alt="ellipsis" />
+          </div>
+          <div class="card__display__hours flex flex-j-c-sb flex-a-i-c">
+            <div class="card__display__hours__current">5hrs</div>
+            <div class="card__display__hours__previous">Last Week - 10hrs</div>
+          </div>
         </div>
-        <div class="card__hours--current">5</div>
-        <div class="card__hours--previous">10</div>
       </div>
 
-      <div class="card">
-        <div class="flex flex-j-c-sb">
-          <h2 class="card__title">Self Care</h2>
-          <img class="card__ellipsis" src="images/icon-ellipsis.svg" alt="ellipsis" />
+      <div class="card selfcare-bg">
+        <div class="card__display">
+          <div class="card__display__title flex flex-j-c-sb flex-a-i-c">
+            <h2>Self Care</h2>
+            <img src="images/icon-ellipsis.svg" alt="ellipsis" />
+          </div>
+          <div class="card__display__hours flex flex-j-c-sb flex-a-i-c">
+            <div class="card__display__hours__current">2hrs</div>
+            <div class="card__display__hours__previous">Last Week - 2hrs</div>
+          </div>
         </div>
-        <div class="card__hours--current">2</div>
-        <div class="card__hours--previous">2</div>
       </div>
     </main>
     <script src="app/js/scrpt.js"></script>

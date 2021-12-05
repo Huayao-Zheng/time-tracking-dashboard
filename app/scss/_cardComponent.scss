@@ -1,0 +1,45 @@
+@use 'pxToRem' as *;
+@use 'color' as *;
+
+.card {
+  padding-top: rem(38);
+
+  &__display {
+    background: $darkblue;
+    height: rem(122);
+    padding: rem(28) rem(24);
+  }
+
+  &__display__title {
+    margin-bottom: rem(7);
+
+    h2 {
+      font-weight: 500;
+      font-size: rem(18);
+      line-height: rem(21);
+      color: #ffffff;
+    }
+
+    img {
+      cursor: pointer;
+      transition: 0.2s;
+      &:hover {
+        transform: scale(1.1);
+      }
+    }
+  }
+
+  &__display__hours {
+    &__current {
+      font-weight: 300;
+      font-size: rem(32);
+      line-height: rem(38);
+      color: #ffffff;
+    }
+    &__previous {
+      font-size: 15px;
+      line-height: 18px;
+      color: $paleblue;
+    }
+  }
+}
