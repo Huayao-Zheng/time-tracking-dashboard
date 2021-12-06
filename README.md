@@ -19,7 +19,7 @@ Your users should be able to:
 ### Links
 
 - [Live](https://lonelybuddy.github.io/time-tracking-dashboard/)
-- [Solution]()
+- [Solution](https://www.frontendmentor.io/solutions/htmlsassjs-4bORCZCin)
 
 ### Built with
 
