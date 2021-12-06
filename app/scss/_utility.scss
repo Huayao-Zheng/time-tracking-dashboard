@@ -1,4 +1,9 @@
 @use 'color' as *;
+@use 'breakpoint' as *;
+
+.active {
+  color: #fff !important;
+}
 
 .flex {
   display: flex;
@@ -16,19 +21,37 @@
 
 .work-bg {
   background: $lightredWork url(../../images/icon-work.svg) no-repeat right 7% top -13%;
+  @include breakpoint-up(large) {
+    background-position: right 9% top -7%;
+  }
 }
 .play-bg {
   background: #55c2e6 url(../../images/icon-play.svg) no-repeat right 8.5% top -6%;
+  @include breakpoint-up(large) {
+    background-position: right 11.5% top -3%;
+  }
 }
 .study-bg {
   background: $lightredStudy url(../../images/icon-study.svg) no-repeat right 7% top -9%;
+  @include breakpoint-up(large) {
+    background-position: right 10% top -4%;
+  }
 }
 .exercise-bg {
   background: $limegreen url(../../images/icon-exercise.svg) no-repeat right 7% top -1%;
+  @include breakpoint-up(large) {
+    background-position: right 10% top 0%;
+  }
 }
 .social-bg {
   background: $violet url(../../images/icon-social.svg) no-repeat right 5% top -25%;
+  @include breakpoint-up(large) {
+    background-position: right 8% top 1%;
+  }
 }
 .selfcare-bg {
   background: $softorange url(../../images/icon-self-care.svg) no-repeat right 5.6% top -12%;
+  @include breakpoint-up(large) {
+    background-position: right 8.6% top -6%;
+  }
 }

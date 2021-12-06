@@ -1,17 +1,33 @@
 @use 'pxToRem' as *;
 @use 'color' as *;
+@use 'breakpoint' as *;
 
 .card {
   padding-top: rem(38);
+  @include breakpoint-up(medium) {
+    padding-top: rem(45);
+  }
 
   &__display {
     background: $darkblue;
     height: rem(122);
     padding: rem(28) rem(24);
+    cursor: pointer;
+    @include breakpoint-up(medium) {
+      height: rem(199);
+      padding: rem(29) rem(30) rem(32) rem(30);
+    }
+
+    &:hover {
+      background: #33397a;
+    }
   }
 
   &__display__title {
     margin-bottom: rem(7);
+    @include breakpoint-up(medium) {
+      margin-bottom: rem(25);
+    }
 
     h2 {
       font-weight: 500;
@@ -24,18 +40,29 @@
       cursor: pointer;
       transition: 0.2s;
       &:hover {
-        transform: scale(1.1);
+        transform: scale(1.3);
       }
     }
   }
 
   &__display__hours {
+    @include breakpoint-up(medium) {
+      flex-direction: column;
+      align-items: flex-start;
+    }
+
     &__current {
       font-weight: 300;
       font-size: rem(32);
       line-height: rem(38);
       color: #ffffff;
+      @include breakpoint-up(medium) {
+        font-size: rem(56);
+        line-height: rem(66);
+        margin-bottom: rem(8);
+      }
     }
+
     &__previous {
       font-size: 15px;
       line-height: 18px;

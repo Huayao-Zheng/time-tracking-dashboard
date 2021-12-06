@@ -1,22 +1,49 @@
 @use 'pxToRem' as *;
 @use 'color' as *;
+@use 'breakpoint' as *;
 
 .user {
   background: $darkblue;
   min-height: rem(203);
   padding-bottom: rem(25);
+  @include breakpoint-up(medium) {
+    padding-bottom: rem(41);
+  }
+  @include breakpoint-up(large) {
+    padding-bottom: rem(33);
+  }
 
   &__info {
     background-color: $blue;
     min-height: rem(133);
+    padding-left: rem(33);
+    @include breakpoint-up(medium) {
+      padding-left: rem(263);
+    }
+    @include breakpoint-up(large) {
+      flex-direction: column;
+      align-items: flex-start;
+      padding: rem(37) rem(84) rem(80) rem(32);
+    }
   }
+
   &__image {
-    width: rem(70);
-    height: rem(70);
-    border: 3px solid #ffffff;
+    width: rem(64);
+    height: rem(64);
+    outline: 3px solid #ffffff;
     border-radius: 50%;
-    margin: 0 rem(18) 0 rem(29);
+    margin-right: rem(18);
+    @include breakpoint-up(medium) {
+      width: rem(90);
+      height: rem(90);
+    }
+    @include breakpoint-up(large) {
+      width: rem(78);
+      height: rem(78);
+      margin-bottom: rem(41);
+    }
   }
+
   &__name p:first-of-type {
     font-weight: 400;
     font-size: rem(15);
@@ -27,6 +54,10 @@
       font-size: rem(24);
       line-height: rem(32);
       color: #fff;
+      @include breakpoint-up(large) {
+        font-size: rem(40);
+        line-height: rem(47);
+      }
     }
   }
 
@@ -35,18 +66,39 @@
     line-height: rem(21);
     color: $desaturatedBlue;
     cursor: pointer;
+    @include breakpoint-up(large) {
+      display: block;
+    }
+
     &:hover {
       color: #fff;
     }
 
     &:nth-child(1) {
       margin-left: rem(34);
+      @include breakpoint-up(large) {
+        margin-bottom: rem(21);
+      }
     }
     &:nth-child(2) {
       margin-left: rem(56);
+      @include breakpoint-up(large) {
+        margin-bottom: rem(21);
+      }
     }
     &:nth-child(3) {
       margin-left: rem(42);
+    }
+
+    &:nth-child(1),
+    &:nth-child(2),
+    &:nth-child(3) {
+      @include breakpoint-up(medium) {
+        margin-left: rem(163);
+      }
+      @include breakpoint-up(large) {
+        margin-left: rem(32);
+      }
     }
   }
 }

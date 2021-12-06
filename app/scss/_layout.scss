@@ -1,14 +1,79 @@
 @use 'pxToRem' as *;
 @use 'color' as *;
+@use 'breakpoint' as *;
 
 body {
+  position: relative;
   font-size: 1.125rem;
-  padding: 5.0625rem;
+  padding: 5.0625rem 0;
   font-family: 'Rubik', sans-serif;
+  background: $verydarkBlue;
+  min-height: 100vh;
+
+  @include breakpoint-up(medium) {
+    padding: 0;
+    justify-content: center;
+  }
 }
 
 main.grid-container {
   display: grid;
   gap: rem(24);
   min-width: rem(327);
+  grid-template-areas:
+    'user'
+    'work'
+    'play'
+    'study'
+    'exercise'
+    'social'
+    'selfcare';
+
+  @include breakpoint-up(medium) {
+    gap: rem(30);
+    grid-auto-rows: rem(244);
+    grid-auto-columns: rem(255);
+    grid-template-areas:
+      'user     user     user'
+      'work     play   study'
+      'exercise social selfcare';
+  }
+
+  @include breakpoint-up(large) {
+    grid-template-areas:
+      'user work     play   study'
+      'user exercise social selfcare';
+  }
+}
+
+div:nth-child(1) {
+  grid-area: user;
+}
+div:nth-child(2) {
+  grid-area: work;
+}
+div:nth-child(3) {
+  grid-area: play;
+}
+div:nth-child(4) {
+  grid-area: study;
+}
+div:nth-child(5) {
+  grid-area: exercise;
+}
+div:nth-child(6) {
+  grid-area: social;
+}
+div:nth-child(7) {
+  grid-area: selfcare;
+}
+
+footer {
+  position: absolute;
+  bottom: 10px;
+  color: $paleblue;
+
+  a {
+    color: $lightredStudy;
+  }
 }
